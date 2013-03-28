@@ -34,7 +34,6 @@ def cmdline(argv):
 		for func in argv[3].split("_"):
 			img2 = Image.open(argv[2])
 			pixels3 = img2.load()
-			#pixels3 = pixels2
 			if func == "miroir":
 				imgfunc.miroir(pixels2, pixels3, img.size)
 			elif func == "neg":
